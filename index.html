@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- google font link -->
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS LINK -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- css link -->
+  <!-- bootstrap css link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-main">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="nav-logo" src="./logo.svg" alt="html img"></a>
+          <form class="d-flex">
+            <input class="form-control me-2" id="nav-search" type="search" placeholder="Search for..."
+              aria-label="Search">
+          </form>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-regular fa-user"></i><br>Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-store"></i><br>My Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-truck-fast"></i><br>Delivery
+                  Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-message"></i><br>Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-regular fa-heart"></i><br>Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i><br>Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- mini banner -->
+    <div class="wrapper">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner mini-ban">
+          <div class="carousel-item active mini-ban-items" data-bs-interval="5000">
+            <p>Enjoy <span class="mini-ban-span">400/- off</span> on your first purchase. T&C apply</p>
+          </div>
+          <div class="carousel-item mini-ban-items" data-bs-interval="5000">
+            <p><span class="mini-ban-span">Free</span> delivery on orders worth <span
+                class="mini-ban-span">2999/-</span> and above</p>
+          </div>
+          <div class="carousel-item mini-ban-items">
+            <p>Follow us on <span class="mini-ban-span">Instagram</span> to get daily stock updates</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mininav -->
+    <div class="wrapper">
+      <div class="mininav">
+        <div class="mininav-items">
+          <p><a class="mininav-a" href="">HEADSETS</a></p>
+        </div>
+        <div class="mininav-items">
+          <p><a class="mininav-a" href="">KEYBOARDS</a></p>
+        </div>
+        <div class="mininav-items">
+          <p><a class="mininav-a" href="">MOUSE</a></p>
+        </div>
+        <div class="mininav-items">
+          <p><a class="mininav-a" href="">GAMING CONTROLLERS</a></p>
+        </div>
+        <div class="mininav-items">
+          <p><a class="mininav-a" href="">MONITORS</a></p>
+        </div>
+        <div class="mininav-items">
+          <p><a class="mininav-a" href="">MICROPHONES</a></p>
+        </div>
+        <div class="mininav-items">
+          <p><a class="mininav-a" href="">ACCESSORIES</a></p>
+        </div>
+        <div class="mininav-items">
+          <p><a class="mininav-a" href="">SALE</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner -->
+    <div class="wrapper">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="banner-slide1" data-bs-interval="5000">
+            <div class="slider-div">
+              <p>XLITE X6 GAMING KEYBOARD</p>
+              <h1>TUNE UP <br>YOUR GAME</h1>
+              <button class="banner-button">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item" id="banner-slide2" data-bs-interval="7000">
+            <div class="slider-div">
+              <p>WIRELESS CONTROLLER</p>
+              <h1>EVOLVE YOUR <br>EXPERIENCE</h1>
+              <button class="banner-button">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item" id="banner-slide3" data-bs-interval="7000">
+            <div class="slider-div">
+              <P>ALL ACCESSORIES AVAILABLE</P>
+              <h1>BUILD YOUR <br>DREAM PC WITH US</h1>
+              <button class="banner-button">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1 -->
+  <section>
+    <div class="wrapper">
+      <div class="div1-3">
+        <h3 data-aos="fade-up" data-aos-duration="1000"><span>TOP </span>CATEGORIES</h3>
+      </div>
+      <div class="parent1">
+        <div class="div1" data-aos="fade-up" data-aos-duration="1000">
+          <div class="div1-content">
+            <div class="div1-1">
+              <p>2 Products</p>
+            </div>
+            <h3>GAMING <br>CONTROLLERS</h3>
+            <button class="sec1button">Shop Now</button>
+          </div>
+          <div class="div1-img">
+            <img class="sec1img1" src="./home1-cate1.png" alt="">
+          </div>
+        </div>
+        <div class="div1" data-aos="fade-up" data-aos-duration="1000">
+          <div class="div1-content">
+            <div class="div1-1">
+              <p>2 Products</p>
+            </div>
+            <h3>GAMING <br>MOUSE</h3>
+            <button class="sec1button">Shop Now</button>
+          </div>
+          <div class="div1-img">
+            <img class="sec1img2" src="./home1-cate2.png" alt="">
+          </div>
+        </div>
+        <div class="div1" data-aos="fade-up" data-aos-duration="1000">
+          <div class="div1-content">
+            <div class="div1-1">
+              <p>2 Products</p>
+            </div>
+            <h3>GAMING <br>CHAIRS</h3>
+            <button class="sec1button">Shop Now</button>
+          </div>
+          <div class="div1-img">
+            <img class="sec1img3" src="./home1-cate3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="parent1-1" data-aos="fade-up" data-aos-duration="1000">
+        <div class="div11" data-aos="fade-up" data-aos-duration="1000">
+          <div class="div1-content">
+            <div class="div1-1">
+              <p>2 Products</p>
+            </div>
+            <h3>GAMING <br>HEADSETS</h3>
+            <button class="sec1button">Shop Now</button>
+          </div>
+          <div class="div1-img">
+            <img class="sec1img4" src="./home1-cate4.png" alt="">
+          </div>
+        </div>
+        <div class="div11" data-aos="fade-up" data-aos-duration="1000">
+          <div class="div1-content">
+            <div class="div1-1">
+              <p>2 Products</p>
+            </div>
+            <h3>KEYBOARDS</h3>
+            <button class="sec1button">Shop Now</button>
+          </div>
+          <div class="div1-img">
+            <img class="sec1img5" src="./home1-cate5.png" alt="">
+          </div>
+        </div>
+        <div class="div11" data-aos="fade-up" data-aos-duration="1000">
+          <div class="div1-content">
+            <div class="div1-1">
+              <p>2 Products</p>
+            </div>
+            <h3>ACCESSORIES</h3>
+            <button class="sec1button">Shop Now</button>
+          </div>
+          <div class="div1-img">
+            <img class="sec1img6" src="./home1-cate6.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- section 2 -->
+  <section>
+    <div class="wrapper">
+      <div class="parent2">
+        <div class="div2-1" data-aos="fade-up" data-aos-duration="1000">
+          <h5>THE ULTIMATE PLAY</h5>
+          <h2>GEFORCE RTX <br>3060TI</h2>
+          <p>$599.99</p>
+          <button class="sec2-butt1">Shop Now</button>
+        </div>
+        <div class="div2-2" data-aos="fade-up" data-aos-duration="2000">
+          <h5>POWER TO THE CORE</h5>
+          <h2>AORUS ELITE <br>AX AM5</h2>
+          <p>$199.99</p>
+          <button class="sec2-butt2">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 3 -->
+  <section>
+    <div class="wrapper">
+      <div class="div3-1" data-aos="fade-up" data-aos-duration="1000">
+        <h3><span class="sec3span">BEST </span>SELLERS</h3>
+      </div>
+      <div class="parent3">
+        <div class="div3-2" data-aos="fade-up" data-aos-duration="1000">
+          <img class="sec3img1" src="./product-18-1-768x768.png" alt="">
+          <h3>Juggernaut 32″ Full HD Curved 165Hz Gaming Monitor</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>5 Reviews</span>
+          <p>$970.25</p>
+          <button class="sec3butt1">Add To Cart</button>
+        </div>
+        <div class="div3-2" data-aos="fade-up" data-aos-duration="1000">
+          <img class="sec3img1" src="./product-29-1-768x768.png" alt="">
+          <h3>Antec NX200M RGB MATX Mini Tower Gaming Case</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>5 Reviews</span>
+          <p>$168.58</p>
+          <button class="sec3butt1">Add To Cart</button>
+        </div>
+        <div class="div3-2" data-aos="fade-up" data-aos-duration="1000">
+          <img class="sec3img1" src="./product-11-1-768x768.png" alt="">
+          <h3>Astro A50 Wireless Gaming Headset + Base Station (PS4 & PC)</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>5 Reviews</span>
+          <p>$65.39
+            –
+            $263.59</p>
+          <button class="sec3butt1">Add To Cart</button>
+        </div>
+        <div class="div3-2" data-aos="fade-up" data-aos-duration="1000">
+          <img class="sec3img1" src="./product-30-1-768x768.png" alt="">
+          <h3>Turtle Beach VelocityONE Flightstick For XBX</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>5 Reviews</span>
+          <p>$137.88
+            –
+            $515.13</p>
+          <button class="sec3butt1">Add To Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 4 -->
+  <section>
+    <div class="wrapper">
+      <div class="parent4">
+        <h3 data-aos="fade-up" data-aos-duration="1000"><span class="sec4span">SHOP BY</span><br><span
+            class="sec4span1">POPULAR</span> <span class="sec4span2">BRANDS</span></h3>
+        <img src="./msi.png" alt="" class="sec4img" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./corsair.png" alt="" class="sec4img" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./nvidia.png" alt="" class="sec4img" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./logitech-2-1-1.png" alt="" class="sec4img" data-aos="fade-up" data-aos-duration="1000">
+        <img src="./amd-logo-pre-2013-1.png" alt="" class="sec4img" data-aos="fade-up" data-aos-duration="1000">
+      </div>
+    </div>
+  </section>
+
+  <!-- section 5 -->
+  <div class="wrapper">
+    <section class="section5">
+      <div class="div5-3">
+        <h2 data-aos="fade-up" data-aos-duration="1000"><span class="sec5span">POPULAR</span> PRODUCTS</h2>
+      </div>
+      <div class="parent5">
+        <div class="div5-1" data-aos="fade-up" data-aos-duration="1000">
+          <img class="sec5img1" src="./product-23-1.png" alt="">
+          <h3>PlayStation 5 DualSense Wireless Controller</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>5 Reviews</span>
+          <p>$51.70
+            –
+            $935.37</p>
+          <button class="sec5butt1">Add To Cart</button>
+        </div>
+        <div class="div5-1" data-aos="fade-up" data-aos-duration="1000">
+          <img class="sec5img1" src="./product-27-2.png" alt="">
+          <h3>8TB Seagate Game Drive Hub For Xbox</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>5 Reviews</span>
+          <p>$89.12</p>
+          <button class="sec5butt1">Add To Cart</button>
+        </div>
+        <div class="div5-1" data-aos="fade-up" data-aos-duration="1000">
+          <img class="sec5img1" src="./product-16-1.png" alt="">
+          <h3>120mm Antec Prizm ARGB PWM Case Fan</h3>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span>5 Reviews</span>
+          <p>$108.28
+            –
+            $963.38</p>
+          <button class="sec5butt1">Add To Cart</button>
+        </div>
+        <div class="div5-2" data-aos="fade-up" data-aos-duration="2000">
+          <p>BEST GAMING PCS</p>
+          <h3>OPTIMIZED FOR YOUR BUDGET</h3>
+          <button class="sec5butt2">Shop Now</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- section 6 -->
+  <div class="wrapper">
+    <section class="section6" data-aos="fade-up" data-aos-duration="500">
+      <div class="parent6">
+        <div class="div6-1">
+          <p>NEXT-GEN MONITOR</p>
+          <h3>ROG STRIX PRO XG32UQ</h3>
+        </div>
+        <div class="div6-2">
+          <p>STARTING AT
+            <span class="sec6span">$399.99</span>
+          </p>
+          <button class="sec6butt1">Shop Now</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- section 7 -->
+  <section class="section7">
+    <div class="wrapper">
+      <div class="parent7">
+        <div class="div7-1">
+          <i class="fa-solid fa-truck-fast sec7icon"></i>
+          <h3>Worldwide Shipping</h3>
+          <p>Enjoy free delivery on every order.</p>
+        </div>
+        <div class="div7-1">
+          <i class="fa-solid fa-sack-dollar sec7icon"></i>
+          <h3>Money-Back Guarantee</h3>
+          <p>30-day money back guarantee.</p>
+        </div>
+        <div class="div7-1">
+          <i class="fa-solid fa-money-check sec7icon"></i>
+          <h3>Secure Payments</h3>
+          <p>Secure checkout verified</p>
+        </div>
+        <div class="div7-1">
+          <i class="fa-solid fa-headphones sec7icon"></i>
+          <h3>Online Customer Service</h3>
+          <p>Call our expert (084) 123 - 456 88</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 8 -->
+  <div class="wrapper">
+    <section class="section8">
+      <div class="div8-2">
+        <h2><span class="div8-2span">CUSTOMER </span>REVIEW</h2>
+        <P><span class="div8-2span">4.8
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            View All 7,185 Reviews
+          </span>
+        </P>
+      </div>
+      <div class="parent8">
+        <div class="div8-1">
+          <h4>Turtle Beach Ear Force Stealth 600X Gen 2 MAX Gaming Headset</h4>
+          <p>Real authentic genuine quality however it fit me like an XL size when In fact Im L. Beware</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <p class="div8-2span2">Patrick M. Newman</p>
+          <P>March 15, 2024</P>
+        </div>
+        <div class="div8-1">
+          <h4>PlayStation 5 DualSense Wireless Controller</h4>
+          <p>Idque dolorum mandamus mei te. An nibh putant suavitate est, sea regione fabulas deterruisset cu.</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="div8-2span2">Philip King</p>
+          <P>March 15, 2024</P>
+        </div>
+        <div class="div8-3" data-aos="fade-up" data-aos-duration="1000">
+          <i class="fa-solid fa-play sec8icon"></i>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- SECTION FOOTER -->
+  <div class="wrapper">
+    <footer class="section-footer">
+      <div class="parent-footer">
+        <div class="div-footer1">
+          <h5>SUPPORT</h5>
+          <ul>
+            <li><a href="">Contact our stores</a></li>
+            <li><a href="">Delivery</a></li>
+          </ul>
+        </div>
+        <div class="div-footer1">
+          <h5>OUR SERVICES</h5>
+          <ul>
+            <li><a href="">Razox for gamers</a></li>
+            <li><a href="">Razox for office</a></li>
+            <li><a href="">Razox gift cards</a></li>
+            <li><a href="">Installation services</a></li>
+          </ul>
+        </div>
+        <div class="div-footer1">
+          <h5>ABOUT US</h5>
+          <ul>
+            <li><a href="">Who we are</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="div-footer1">
+          <h5>LEGAL</h5>
+          <ul>
+            <li><a href="">Return policy</a></li>
+            <li><a href="">Terms and conditions</a></li>
+            <li><a href="">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="div-footer1">
+          <h4>2972 Westheimer Rd. Santa Ana, Illinois 85486</h4>
+          <p>
+            Mon – Fri: 9am – 5pm
+          </p>
+          <i class="fa-brands fa-facebook-f footer-icon1"></i>
+          <i class="fa-brands fa-instagram footer-icon"></i>
+          <i class="fa-brands fa-x-twitter footer-icon"></i>
+          <i class="fa-brands fa-youtube footer-icon2"></i>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- js link -->
+  <script src="./home.js"></script>
+  <!-- bootstrap js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- AOS LINK -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
